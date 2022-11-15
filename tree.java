@@ -2,12 +2,11 @@ import java.util.Scanner;
 
 public class tree {
   public static void main(String[] args) {
-    //输入高度
     System.out.print("how tall is your triangle? ");
     Scanner scanner = new Scanner(System.in);
     int height = scanner.nextInt();
 
-    //第n层有(height-n)个空格，(2n-1)个*
+    //Layer n has (height-n) spaces, (2n-1) *s
     for(int n=1; n<=height; n++){
       for(int i=0; i<height-n; i++){
         System.out.print(" ");
