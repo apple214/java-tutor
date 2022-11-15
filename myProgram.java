@@ -29,7 +29,6 @@ public class myProgram {
 // objects - instances of a class
 
 // {}curly braces - container
-// 空格不必要
 
 // src folder - source files
 // bin folder - object files
