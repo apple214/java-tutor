@@ -3,15 +3,15 @@ import java.util.Scanner;
 public class askNumber {
 
   public static void main(String[] args){
-    //请求输入
+    //ask for input
     String askInput = new String("Enter number 157: ");
     System.out.print(askInput);
 
-    //输入数字
+    //input
     Scanner input = new Scanner(System.in);
     int number = input.nextInt();
 
-    //规定目标
+    //set target
     int targetNum = 157;
 
     while(number != targetNum){
@@ -21,8 +21,7 @@ public class askNumber {
 
     System.out.print("Thank you!");
 
-    //好习惯
+    //good habit
     input.close();
   }
-
 }
