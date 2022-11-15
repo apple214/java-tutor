@@ -9,7 +9,7 @@ Write a program that plays rock, paper, scissors until a player reaches 3 wins.
 
 public class rockPaperScissors {
   public static void main(String[] args) {
-    //定义胜场
+    //define wins
     int win1 = 0;
     int win2 = 0;
     int[] wins = new int[2];
@@ -18,7 +18,7 @@ public class rockPaperScissors {
 
     Game game = new Game();
     while(wins[0] <3 && wins[1] < 3) {
-      //要求输入
+      //input
       System.out.print("Player 1, pick either rock, paper, or scissors: ");
       Scanner scanner = new Scanner(System.in);
       String player1 = scanner.nextLine();
@@ -33,23 +33,23 @@ public class rockPaperScissors {
 
 }
 
-//游戏规则
+//rules
 class Game{
   public int[] play(String player1, String player2, int[] wins) {
-    //输入无效
+    //input error
     if (!player1.equals("rock") && !player1.equals("paper") && !player1.equals("scissors")
         && !player2.equals("rock") && !player2.equals("paper") && !player2.equals("scissors")) {
       System.out.println("No contest.");
     }
 
-    //输入有效
+    //valid input
     else {
-      //平局
+      //tie
       if (player1.equals(player2)) {
         System.out.println("Tie game.");
       }
 
-      //player1赢
+      //player1 wins
       if (player1.equals("paper") && player2.equals("rock")) {
         System.out.println("Player 1 wins!");
         wins[0] += 1;
@@ -63,7 +63,7 @@ class Game{
         wins[0] += 1;
       }
 
-      ////player2赢
+      ////player2 wins
       if (player2.equals("paper") && player1.equals("rock")) {
         System.out.println("Player 2 wins!");
         wins[1] += 1;
