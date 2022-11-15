@@ -43,6 +43,6 @@ public class russianPeasant {
 }
 
 /**
- * 如果相除的两个数都是整数，那么结果也是整数，这叫做取整除法。比如，3/2,结果是1。
- * 如果其中有一个是浮点数，那么就是浮点除法，结果是浮点数，比如，3.0/2,结果是1.5.
- */
+  * If the two numbers being divided are integers, then the result is also an integer, which is called division by rounding. For example, 3/2, the result is 1.
+  * If one of them is a floating-point number, then it is a floating-point division, and the result is a floating-point number, for example, 3.0/2, the result is 1.5.
+  */
