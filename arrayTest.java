@@ -30,7 +30,7 @@ public class arrayTest {
     }
 
     Arrays.sort(ages);
-    Arrays.parallelSort(ages); //大数组适用
+    Arrays.parallelSort(ages);
     System.out.println(Arrays.toString(ages));
 
     int ages2[] = {1,2,3};
@@ -42,7 +42,7 @@ public class arrayTest {
       System.out.println("finally");
     };
 
-    Arrays.fill(ages, 100); //填充
+    Arrays.fill(ages, 100);
 
     scanner.close();
   }
