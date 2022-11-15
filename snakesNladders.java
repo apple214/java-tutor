@@ -4,10 +4,10 @@ public class snakesNladders {
   public static void main(String[] args) {
 
     Rules rules = new Rules();
-    //位置
+    //location
     int location = 1;
     while (location < 100){
-      //掷骰子
+      //roll the dice
       System.out.print("Enter roll: ");
       Scanner scanner = new Scanner(System.in);
       int dice = scanner.nextInt();
@@ -24,9 +24,9 @@ public class snakesNladders {
         System.out.println("You Win!");
         break;
       }
-      //计算加和
+
       location += dice;
-      //计算位置
+      //cal location
       location = rules.specialLocations(location);
       System.out.println("You are on square " + location);
     }
@@ -35,7 +35,7 @@ public class snakesNladders {
 
 static class Rules{
   public int specialLocations(int location){
-    //梯子
+    //ladder
     if (location == 9){
       location = 34;
     }
@@ -45,7 +45,7 @@ static class Rules{
     if (location == 67){
       location = 86;
     }
-    //蛇
+    //snack
     if (location == 54){
       location = 19;
     }
