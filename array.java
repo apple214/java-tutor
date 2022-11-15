@@ -21,11 +21,11 @@ public class array {
 }
 
 /**
- * Java异常处理主要通过5个关键字控制：try、catch、throw、throws和finally。try的意思是试试它所包含的代码段中是否会发生异常；而catch当有异常时抓住它，并进行相应的处理，使程序不受异常的影响而继续执行下去；throw是在程序中明确引发异常；throws的作用是如果一个方法可以引发异常，而它本身并不对该异常处理，那么它必须将这个异常抛给调用它的方法；finally是无论发不发生异常都要被执行的代码
+ * Java exception handling is mainly controlled by five keywords: try, catch, throw, throws and finally. try means to try whether an exception will occur in the code segment it contains; catch catches it when there is an exception, and handles it accordingly, so that the program is not affected by the exception and continues to execute; throw is in the program The function of throws is that if a method can throw an exception, but it does not handle the exception itself, then it must throw the exception to the method that calls it; finally is executed regardless of whether an exception occurs or not. code
  *
- *     关键字:throw,throws,try和catch的用法如下：
- *         1、throws出现在方法的声明中，表示该方法可能会抛出的异常，允许throws后面跟着多个异常类型
- *         2、throw出现在方法体中，用于抛出异常。当方法在执行过程中遇到异常情况时，将异常信息封装为异常对象，然后throw。
- *         3、try出现在方法体中，它自身是一个代码块，表示尝试执行代码块的语句。如果在执行过程中有某条语句抛出异常，那么代码块后面的语句将不被执行。
- *         4、catch出现在try代码块的后面，自身也是一个代码块，用于捕获异常try代码块中可能抛出的异常。catch关键字后面紧接着它能捕获的异常类型，所有异常类型的子类异常也能被捕获。
+ * Keywords: throw, throws, try and catch are used as follows:
+ * 1. throws appears in the declaration of the method, indicating the exception that the method may throw, allowing throws to be followed by multiple exception types
+ * 2. throw appears in the method body and is used to throw exceptions. When the method encounters an exception during execution, the exception information is encapsulated as an exception object, and then thrown.
+ * 3. try appears in the method body, which itself is a code block, indicating the statement that tries to execute the code block. If a statement throws an exception during execution, the statements following the code block will not be executed.
+ * 4. The catch appears after the try code block and is itself a code block, used to catch exceptions that may be thrown in the exception try code block. The catch keyword is followed by the exception type that it can catch, and all subclass exceptions of the exception type can also be caught.
  */
