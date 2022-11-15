@@ -2,12 +2,11 @@ import java.util.Scanner;
 
 public class valPassword {
   public static void main(String[] args) {
-    //输入密码
+    //input 
     System.out.print("Enter a new password: ");
     Scanner scanner = new Scanner(System.in);
     String password = scanner.nextLine();
 
-    //验证方法
     int capital = 0, number = 0, other = 0;
     char [] passwordArr = password.toCharArray();
     int length = passwordArr.length;
@@ -35,7 +34,6 @@ public class valPassword {
       System.out.println("Invalid password.");
     }
 
-    //好习惯
     scanner.close();
   }
 }
